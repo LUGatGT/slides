@@ -112,6 +112,28 @@ sub foo {
 foo(); #calling the subroutine
                 </code></pre>
             </section>
+            <section>
+                <h3>Types</h3>
+                <p>Types in perl are kind of weird.
+                Basically the type information can be encoded in the operators.*</p>
+                <pre><code class="hljs perl">
+my $day = 21;
+print "Today is January " . $day . " !";
+                </code></pre>
+                <footer><small>*Disclaimer: I don't know perl very well.</small></footer>
+            </section>
+            <section>
+                <h3>Regex</h3>
+                <pre><code class="hljs perl">
+$_ = 'foobar';
+
+if (/.*bar.*/) { # $var =~ /.*bar.*/
+    print "$_ contains bar";
+} else {
+    print "$_ does not match";
+}
+                </code></pre>
+            </section>
         </section>
         <section>
             <section>
