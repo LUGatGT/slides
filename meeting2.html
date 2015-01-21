@@ -72,15 +72,45 @@ if( window.location.search.match( /print-pdf/gi ) ) {
                 <a href="http://duckduckhack.com">DuckDuckHack</a></p>
             </section>
             <section>
-                <section>
-                    <h2>Demo Time!</h2>
-                    <a href="https://github.com/duckduckgo/zeroclickinfo-goodies">Github Repo</a>
-                </section>
+                <h2>Demo Time!</h2>
+                <a href="https://github.com/duckduckgo/zeroclickinfo-goodies">Github Repo</a>
+            </section>
 
-                <section>
-                    <h2>But first...</h2>
-                    <h3 class="fragment">Just enough Perl to hack!</h3>
-                </section>
+            <section>
+                <h2>But first...</h2>
+                <h3 class="fragment">Let's learn just enough Perl.</h3>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Hello World</h3>
+                <pre><code class="hljs perl">
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+print "Hello World!\n";
+                </code></pre>
+            </section>
+            <section>
+                <h3>Using Variables</h3>
+                <pre><code class="hljs perl">
+my $x = 10; #scalar variables begin with a $
+my @a = (10,12,43); #arrays begin with a @
+my %h = ( name => 'Collin', age => 19); #hashes begin with a %
+$_ = 10; #perl has a special variable called the default variable
+                </code></pre>
+            </section>
+            <section>
+                <h3>Subroutines (functions)</h3>
+                <pre><code class="hljs perl">
+sub foo {
+    my ($p1, $p2) = @_; #destructuring arguments
+    return 'bar';
+}
+
+foo(); #calling the subroutine
+                </code></pre>
             </section>
         </section>
         <section>
