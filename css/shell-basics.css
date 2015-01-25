@@ -1,15 +1,15 @@
 
 div .split-wrapper {
-    width: 100%;
+    overflow: hidden;
 }
-div .split-wrapper .split-right {
-    border-left: 1px solid white;
-    float: right;
+
+div .split-wrapper .split-column {
+    box-sizing: border-box;
+    float: left;
     width: 50%;
 }
-div .split-wrapper .split-left {
-    display: inline;
-    float: left;
-    width: 49%;
+
+.split-wrapper div:first-child {
+    border-right: 4px solid #eee;
 }
 
