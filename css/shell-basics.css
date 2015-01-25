@@ -5,11 +5,17 @@ div .split-wrapper {
 
 div .split-wrapper .split-column {
     box-sizing: border-box;
+    /* Remove following lines for linux only */
     float: left;
     width: 50%;
 }
 
-.split-wrapper div:first-child {
-    border-right: 4px solid #eee;
+div .vertical-bar {
+    border-left: 4px solid #eee;
+}
+
+.reveal .windows {
+    /* Uncomment following for linux only. */
+    /* display: none; */
 }
 

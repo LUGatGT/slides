@@ -63,25 +63,228 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         </section>
         <section>
             <section>
-                <h2>Navigating using the shell</h2>
+                <h2>What's the difference between:</h2>
+                <ul>
+                    <li>Terminal</li>
+                    <li>Shell</li>
+                </ul>
             </section>
             <section>
-                <h2>List directory contents</h2>
+                <h2>List of Common Shells</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Posix Shells</h3>
+                        <ul>
+                            <li>Borne Shell (sh) - 1977</li>
+                            <li>Bash - 1989</li>
+                            <li>Zsh - 1990</li>
+                        </ul>
+                    </div>
+
+                    <div class="windows split-column">
+                        <h3>Windows Shells</h3>
+                        <ul>
+                            <li>COMMAND.COM - 1981</li>
+                            <li>cmd.exe - 1993</li>
+                            <li>PowerShell - 2006</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Choosing a Shell</h2>
                 <div class="split-wrapper">
                     <div class="split-column">
                         <h3>Unix/Linux</h3>
-                        <code>ls</code>
+                        <p>Bash is fine. Try Zsh if curious.</p>
                     </div>
-                    <div class="split-column">
+                    <div class="vertical-bar windows split-column">
                         <h3>Windows</h3>
-                        <code>dir</code>
+                        <p>Use PowerShell! Seriously!</p>
                     </div>
+                </section>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Navigating using the shell</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <pre><code class="hljs">
+linus@host:~$ cd Documents/Folder
+                        </code></pre>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <pre><code class="hljs">
+C:\Users\Bill> cd Documents\Folder
+                        </code></pre>
+                    </div>
+                </div>
+                    <p>The <code>cd</code> command changes the current directory.</p>
+                </section>
+                <section>
+                    <h2>List directory contents</h2>
+                    <div class="split-wrapper">
+                        <div class="split-column">
+                            <h3>Unix/Linux</h3>
+                            <code>ls</code>
+                        </div>
+                        <div class="vertical-bar windows split-column">
+                            <h3>Windows</h3>
+                            <code>dir</code>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Understanding the differences between:</h3>
+                    <div class="split-wrapper">
+                        <div class="split-column">
+                            <h4>Shell Builtins</h4>
+                            <p>A <em>shell builtin</em> is a program that is run directly within the shell.</p>
+                        </div>
+                        <div class="vertical-bar split-column">
+                            <h4>External Programs</h4>
+                            <p>An <em>external program</em> is a program that is called by the shell.</p>
+                        </div>
+                </section>
+                <section>
+                    <h2>Getting Command Help</h2>
+                    <div class="split-wrapper">
+                        <div class="split-column">
+                            <pre><code class="hljs">
+linus@host:~$ ls --help
+                            </code></pre>
+                        </div>
+                        <div class="vertical-bar windows split-column">
+                            <pre><code class="hljs">
+C:\Users\Bill> dir /?
+                            </code></pre>
+                        </div>
+                    </div>
+
+            </section>
+            <section>
+                <p>Man, I wish I knew how to use ...
+                <span class="fragment">grep</span>
+                <span class="fragment">, find</span>
+                <span class="fragment">, and git.</span>
+                </p>
+                <div class="fragment">
+                    <p>Well now you can learn!</p>
+                    <pre><code class="hljs">
+man command
+                    </code></pre>
                 </div>
             </section>
         </section>
 
-</div>
+        <section>
+            <section>
+                <h2>Time to Learn Some Basic Commands!</h2>
+            </section>
+            <section>
+                <h2>Be Careful</h2>
+                <p>The following commands can overwrite your files if used improperly.</p>
+            </section>
+            <section>
+                <h2>Printing Files (to the screen)</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>cat file</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>type file</code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Copying Files</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>cp source dest</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>copy source dest</code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Renaming Files</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>mv old new</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>rename old new</code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Deleting Files</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>rm file</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>del file</code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Editing Textfiles</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>nano file.txt</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>edit file.txt</code>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Symbolic Links (Shortcuts)</h2>
+                <div class="split-wrapper">
+                    <div class="split-column">
+                        <h3>Unix/Linux</h3>
+                        <code>ln -s target linkname</code>
+                    </div>
+                    <div class="vertical-bar windows split-column">
+                        <h3>Windows</h3>
+                        <code>mklink /?</code>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Pipes and Redirection</h2>
+                <p>Pipes are a way you can use the output of one command as the input for another.</p>
+            </section>
+        </section>
+        <section>
+            <h2>Job Control</h2>
+        </section>
+        <section>
+            <h2>Advanced Commands</h2>
+        </section>
 
+
+        <section>
+            <h2>Resources</h2>
+            <a href="https://en.wikipedia.org/wiki/Comparison_of_command_shells">Shell list</a>
+        </section>
+
+    </div>
 </div>
 
 <script src="lib/js/head.min.js"></script>
