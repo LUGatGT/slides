@@ -1,0 +1,15 @@
+
+div .split-wrapper {
+    width: 100%;
+}
+div .split-wrapper .split-right {
+    border-left: 1px solid white;
+    float: right;
+    width: 50%;
+}
+div .split-wrapper .split-left {
+    display: inline;
+    float: left;
+    width: 49%;
+}
+
