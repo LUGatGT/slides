@@ -275,6 +275,24 @@ man command
                 <h2>Pipes and Redirection</h2>
                 <p>Pipes are a way you can use the output of one command as the input for another.</p>
             </section>
+            <section>
+                <p>Let's say we want a file that lists all of the programs we can run from our shell.</p>
+            </section>
+            <section>
+		<p>We are going to use the following programs:</p>
+		<ul>
+		    <li>echo</li>
+		    <li>tr</li>
+		    <li>xargs</li>
+		    <li>ls</li>
+		    <li>sort</li>
+		    <li>uniq</li>
+		</ul>
+            </section>
+	    <section>
+		<h2>Final Program</h2>
+		<pre><code class="fragment hljs bash">echo $PATH | tr ':' '\n' | xargs -n 1 ls -1 | sort | uniq > file</code></pre>
+	    </section>
         </section>
         <section>
             <section>
