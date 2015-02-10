@@ -1,0 +1,9 @@
+.reveal .tile-wrapper {
+    /* Center Images*/
+    margin-left: 75px;
+}
+.tile-wrapper .tile {
+    float: left;
+    margin: 15px 15px;
+}
+
